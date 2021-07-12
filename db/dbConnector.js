@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { environment } = require('../config');
-const { userSchema } = require('../schema/userSchema');
+const { userSchema } = require('./schema/userSchema');
 const env = process.env.NODE_ENV || "development";
 
 mongoose.connect(environment[env].dbString, {
